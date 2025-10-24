@@ -12,17 +12,17 @@ const Index = () => {
 
   const projects = [
     {
-      title: "Project One",
+      title: "Алексей Иванов",
       description: "Минималистичное веб-приложение с фокусом на пользовательский опыт",
       image: "https://cdn.poehali.dev/projects/57f11e74-b7e1-43b6-88c9-0ee462c175ce/files/e2ce3fdc-508a-4847-822c-415ec9d90f04.jpg"
     },
     {
-      title: "Project Two",
+      title: "Мария Петрова",
       description: "Современный интерфейс для управления данными",
       image: "https://cdn.poehali.dev/projects/57f11e74-b7e1-43b6-88c9-0ee462c175ce/files/d25258ec-c690-4914-98b1-24f9b8e082fb.jpg"
     },
     {
-      title: "Project Three",
+      title: "Дмитрий Смирнов",
       description: "Адаптивный дизайн для мобильных устройств",
       image: "https://cdn.poehali.dev/projects/57f11e74-b7e1-43b6-88c9-0ee462c175ce/files/58397f22-a2f8-477e-8764-28aa30caf96e.jpg"
     }
@@ -48,7 +48,7 @@ const Index = () => {
         <div className="container mx-auto max-w-4xl">
           <div className="grid md:grid-cols-2 gap-0 border border-black">
             <div className="p-12 md:p-20 flex flex-col justify-center">
-              <h1 className="text-5xl md:text-7xl font-light mb-6 tracking-tight">Ваше Имя</h1>
+              <h1 className="text-5xl md:text-7xl font-light mb-6 tracking-tight">Иван Сидоров</h1>
               <p className="text-xl md:text-2xl font-light text-muted-foreground">Developer / Designer</p>
             </div>
             <div className="border-l border-black">
