@@ -53,7 +53,7 @@ const Index = () => {
             </div>
             <div className="border-l border-black">
               <img 
-                src="https://cdn.poehali.dev/projects/57f11e74-b7e1-43b6-88c9-0ee462c175ce/files/58397f22-a2f8-477e-8764-28aa30caf96e.jpg" 
+                src="https://cdn.poehali.dev/projects/57f11e74-b7e1-43b6-88c9-0ee462c175ce/files/5838678b-ce07-497b-9710-c3023a76974a.jpg" 
                 alt="Portfolio" 
                 className="w-full h-full object-cover min-h-[400px]"
               />
