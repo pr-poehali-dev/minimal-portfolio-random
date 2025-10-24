@@ -12,19 +12,19 @@ const Index = () => {
 
   const projects = [
     {
-      title: "Алексей Иванов",
+      title: "Веб-приложение Dashboard",
       description: "Минималистичное веб-приложение с фокусом на пользовательский опыт",
-      image: "https://cdn.poehali.dev/projects/57f11e74-b7e1-43b6-88c9-0ee462c175ce/files/e2ce3fdc-508a-4847-822c-415ec9d90f04.jpg"
+      image: "https://cdn.poehali.dev/projects/57f11e74-b7e1-43b6-88c9-0ee462c175ce/files/74c657c4-b4fb-412a-9a00-4543302d59e2.jpg"
     },
     {
-      title: "Мария Петрова",
+      title: "Мобильное приложение",
       description: "Современный интерфейс для управления данными",
-      image: "https://cdn.poehali.dev/projects/57f11e74-b7e1-43b6-88c9-0ee462c175ce/files/d25258ec-c690-4914-98b1-24f9b8e082fb.jpg"
+      image: "https://cdn.poehali.dev/projects/57f11e74-b7e1-43b6-88c9-0ee462c175ce/files/3a4245f7-41a0-46db-9d50-2f4cb67b67ab.jpg"
     },
     {
-      title: "Дмитрий Смирнов",
+      title: "E-commerce платформа",
       description: "Адаптивный дизайн для мобильных устройств",
-      image: "https://cdn.poehali.dev/projects/57f11e74-b7e1-43b6-88c9-0ee462c175ce/files/58397f22-a2f8-477e-8764-28aa30caf96e.jpg"
+      image: "https://cdn.poehali.dev/projects/57f11e74-b7e1-43b6-88c9-0ee462c175ce/files/4f847f2c-9a38-4235-8f76-67382360ac1a.jpg"
     }
   ];
 
