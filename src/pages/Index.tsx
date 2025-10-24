@@ -13,15 +13,18 @@ const Index = () => {
   const projects = [
     {
       title: "Project One",
-      description: "Минималистичное веб-приложение с фокусом на пользовательский опыт"
+      description: "Минималистичное веб-приложение с фокусом на пользовательский опыт",
+      image: "https://cdn.poehali.dev/projects/57f11e74-b7e1-43b6-88c9-0ee462c175ce/files/e2ce3fdc-508a-4847-822c-415ec9d90f04.jpg"
     },
     {
       title: "Project Two",
-      description: "Современный интерфейс для управления данными"
+      description: "Современный интерфейс для управления данными",
+      image: "https://cdn.poehali.dev/projects/57f11e74-b7e1-43b6-88c9-0ee462c175ce/files/d25258ec-c690-4914-98b1-24f9b8e082fb.jpg"
     },
     {
       title: "Project Three",
-      description: "Адаптивный дизайн для мобильных устройств"
+      description: "Адаптивный дизайн для мобильных устройств",
+      image: "https://cdn.poehali.dev/projects/57f11e74-b7e1-43b6-88c9-0ee462c175ce/files/58397f22-a2f8-477e-8764-28aa30caf96e.jpg"
     }
   ];
 
@@ -43,9 +46,18 @@ const Index = () => {
 
       <section id="home" className="pt-32 pb-20 px-6">
         <div className="container mx-auto max-w-4xl">
-          <div className="border border-black p-12 md:p-20">
-            <h1 className="text-5xl md:text-7xl font-light mb-6 tracking-tight">Ваше Имя</h1>
-            <p className="text-xl md:text-2xl font-light text-muted-foreground">Developer / Designer</p>
+          <div className="grid md:grid-cols-2 gap-0 border border-black">
+            <div className="p-12 md:p-20 flex flex-col justify-center">
+              <h1 className="text-5xl md:text-7xl font-light mb-6 tracking-tight">Ваше Имя</h1>
+              <p className="text-xl md:text-2xl font-light text-muted-foreground">Developer / Designer</p>
+            </div>
+            <div className="border-l border-black">
+              <img 
+                src="https://cdn.poehali.dev/projects/57f11e74-b7e1-43b6-88c9-0ee462c175ce/files/58397f22-a2f8-477e-8764-28aa30caf96e.jpg" 
+                alt="Portfolio" 
+                className="w-full h-full object-cover min-h-[400px]"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -85,15 +97,26 @@ const Index = () => {
           <h2 className="text-3xl font-light mb-12 tracking-wide">Проекты</h2>
           <div className="space-y-6">
             {projects.map((project, index) => (
-              <Card key={index} className="border border-black rounded-none p-8 hover:translate-x-2 transition-transform">
-                <h3 className="text-2xl font-light mb-3">{project.title}</h3>
-                <p className="text-muted-foreground font-light">{project.description}</p>
-                <Button 
-                  variant="outline" 
-                  className="mt-6 rounded-none border-black hover:bg-black hover:text-white transition-colors"
-                >
-                  Подробнее
-                </Button>
+              <Card key={index} className="border border-black rounded-none overflow-hidden hover:translate-x-2 transition-transform">
+                <div className="grid md:grid-cols-3 gap-0">
+                  <div className="md:col-span-1">
+                    <img 
+                      src={project.image} 
+                      alt={project.title} 
+                      className="w-full h-full object-cover min-h-[200px]"
+                    />
+                  </div>
+                  <div className="md:col-span-2 p-8 border-l border-black">
+                    <h3 className="text-2xl font-light mb-3">{project.title}</h3>
+                    <p className="text-muted-foreground font-light">{project.description}</p>
+                    <Button 
+                      variant="outline" 
+                      className="mt-6 rounded-none border-black hover:bg-black hover:text-white transition-colors"
+                    >
+                      Подробнее
+                    </Button>
+                  </div>
+                </div>
               </Card>
             ))}
           </div>
